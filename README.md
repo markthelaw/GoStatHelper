@@ -1,5 +1,6 @@
 # GoStatHelper
 A few useful statistics functions that are missing from Go standard library.
+The key function in this library is **ErfInv**, which is commonly used in statistics.  
 
 ## Reference ##
 
