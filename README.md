@@ -10,3 +10,9 @@ A few useful statistics functions that are missing from Go standard library.
 ###TI invnorm:###
 
 [http://tibasicdev.wikidot.com/invnorm](http://tibasicdev.wikidot.com/invnorm "TI invnorm function")
+
+
+----------
+
+
+This library is released under the MIT license
