@@ -1,6 +1,17 @@
 # GoStatHelper
 A few useful statistics functions that are missing from Go standard library.
-The key function in this library is **ErfInv**, which is commonly used in statistics.  
+
+##Functions##
+1. ErfInv
+
+		ErfInv(x float64) -  returns inverse error function
+2. InverserNormalCDF
+		
+		InverserNormalCDF(x float64) - returns inverse Normal CDF
+
+3. InverseNormalDist
+
+		InverseNormalDist(x float64) - returns inverse normal distribution function
 
 ## Reference ##
 
