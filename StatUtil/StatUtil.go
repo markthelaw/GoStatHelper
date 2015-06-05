@@ -1,4 +1,5 @@
-
+//Provides Additional common stat functions that is not included in GO standard library.
+//GO standard library philosophy is to follow C standard library 
 package StatUtil
 
 import (
@@ -6,15 +7,21 @@ import (
 )
 
 
-// referenced from http://tibasicdev.wikidot.com/invnorm
+//Using Inverse Normal CDF function, mean and standard deviation to get the Inverse Norm Dist. 
+//referenced from http://tibasicdev.wikidot.com/invnorm
 func InverseNormalDist( p float64, mean float64, stdv float64) float64{
 	return mean + stdv*InverserNormalCDF(p)
 }
 
+//Inverse Normal CDF,
+//p is probability
+//referenced from http://tibasicdev.wikidot.com/invnorm
 func InverserNormalCDF(p float64) float64{
 	return math.Sqrt(2)*ErfInv(2*p - 1)
 }
-//  function reference from Apache commons-math Erf
+
+//Inverse of the Error Function,
+//function referenced from Apache commons-math Erf
 func ErfInv(x float64) float64 {
 
 	// beware that the logarithm argument must be
